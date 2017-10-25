@@ -1,3 +1,5 @@
+import { TitleBarComponent } from './../title-bar/title-bar.component';
+import { ContentComponent } from './../content/content.component';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { FrameworkBodyComponent } from './framework-body.component';
@@ -8,7 +10,10 @@ describe('FrameworkBodyComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ FrameworkBodyComponent ]
+      declarations: [
+        FrameworkBodyComponent,
+        ContentComponent,
+        TitleBarComponent]
     })
     .compileComponents();
   }));
